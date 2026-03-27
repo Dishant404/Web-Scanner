@@ -1,36 +1,62 @@
-Dishant Web Scanner 🛡️
+# Dishant Web Scanner 🛡️
 
-Dishant Web Scanner is a simple web security tool that helps you check the safety of websites. It scans for security headers, open ports, and SSL certificates.
+**Dishant Web Scanner** is a simple and easy-to-use web security tool. It helps you check a website’s security by scanning for security headers, open ports, and SSL certificates.
 
-Features
-✅ Security Header Check – See if important HTTP headers are present:
-Content-Security-Policy
-Strict-Transport-Security
-X-Content-Type-Options
-X-Frame-Options
-X-XSS-Protection
-🔌 Port Scanner – Scan common ports like 80, 443, 22, 8080, etc. to find open services.
-🔐 SSL Certificate Check – Check if the website has a valid SSL certificate and see its issuer and expiry date.
-💻 Easy Command-Line Interface – Simple input and clear results with a cool ASCII banner.
-Installation
-Make sure Python 3 is installed.
-Install required Python package:
+---
+
+## Features
+
+- ✅ **Security Header Check**  
+  Checks important HTTP headers to see if the website is secure:  
+  - Content-Security-Policy  
+  - Strict-Transport-Security  
+  - X-Content-Type-Options  
+  - X-Frame-Options  
+  - X-XSS-Protection  
+
+- 🔌 **Port Scanner**  
+  Scans common ports like 21, 22, 23, 25, 53, 80, 110, 139, 143, 443, 445, 8080 to find open services.
+
+- 🔐 **SSL Certificate Check**  
+  Verifies if the website has a valid SSL certificate and shows the issuer and expiration date.
+
+- 💻 **Easy CLI Interface**  
+  Clean ASCII banner and structured output for quick results.
+
+---
+
+## Installation
+
+1. Make sure **Python 3** is installed on your system.
+2. Install the required Python library:
+
+```bash
 pip install requests
-Clone the repository:
-git clone https://github.com/Dishant404/dishant-web-scanner.git
+```
+#Clone this repository:
+```bash
+git clone https://github.com/Dishant404/web-scanner.git
 cd dishant-web-scanner
-How to Use
-Run the scanner:
+```
+#Usage
+1. Run the scanner:
+```bash
 python3 scanner.py
-Enter the website URL when asked:
+```
+2. Enter the website URL when prompted:
+```bash
 Enter website (example: https://example.com):
-Wait for results. The scanner will show:
-Security headers
-Open ports
-SSL certificate details
+```  
+3. The scanner will show:
+   
+•Security headers
 
-Sample Output:
+•Open ports
 
+•SSL certificate details
+
+#Example Output:
+```bash
 [+] Checking Security Headers...
 [✔] Content-Security-Policy is present
 [✘] Strict-Transport-Security is missing
@@ -43,14 +69,16 @@ Sample Output:
 [✔] SSL Certificate Found
 Issuer: [('organizationName', 'Let's Encrypt')]
 Valid Till: Mar 30 12:00:00 2026 GMT
+```
 Contributing
 
-You can help make this tool better by:
+Contributions are welcome! You can help improve this tool by:
 
 Adding more ports to scan
-Checking HTTPS redirect enforcement
+Checking HTTPS enforcement
 Adding vulnerability tests like XSS or SQL injection
-Improving the CLI interface
+Enhancing the CLI interface
+
 License
 
 This project is open source under the MIT License.
